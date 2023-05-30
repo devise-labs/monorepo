@@ -1,0 +1,5 @@
+{
+    "devDependencies": {
+        "@definelabs/lib-cli-bin": "workspace:*"
+    }
+}

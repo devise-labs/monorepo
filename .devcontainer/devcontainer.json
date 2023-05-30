@@ -1,0 +1,21 @@
+{
+    "build": {
+        "context": ".",
+        "dockerfile": "./Dockerfile"
+    },
+    "features": {
+        "desktop-lite": {
+            "password": "redefine",
+            "webPort": "6080",
+            "vncPort": "5901"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "workbench.colorTheme": "Default Dark Modern"
+            }
+        }
+    },
+    "forwardPorts": [6080]
+}

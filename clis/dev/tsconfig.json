@@ -1,0 +1,6 @@
+{
+    "extends": "@definelabs/libs-deps-cli/tsconfig.json",
+    "compilerOptions": {
+        "types": ["node"]
+    }
+}

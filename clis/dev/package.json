@@ -1,0 +1,9 @@
+{
+  "name": "@definelabs/cli-dev",
+  "description": "run an app in dev mode",
+  "dependencies": {
+    "@definelabs/lib-deps-cli": "workspace:*",
+    "@types/node": "18.16.3"
+  },
+  "main": "src"
+}

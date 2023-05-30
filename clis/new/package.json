@@ -1,0 +1,8 @@
+{
+  "name": "@definelabs/cli-new",
+  "description": "creating packages",
+  "dependencies": {
+    "@definelabs/lib-deps-cli": "workspace:*"
+  },
+  "main": "src"
+}

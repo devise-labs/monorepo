@@ -1,0 +1,8 @@
+{
+  "name": "@definelabs/lib-deps-common",
+  "dependencies": {
+    "type-fest": "^3.11.0",
+    "typescript": "^5.0.4"
+  },
+  "main": "src"
+}
