@@ -40,7 +40,7 @@ ENV PATH="${USER_HOME}/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 RUN node --version
 RUN npm --version
 RUN npm i -g pnpm
-RUN alias x="pnpm cli"
+RUN echo "alias x=\"pnpm cli\"" >> ~/.bash_aliases
 
 # rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y

@@ -17,5 +17,6 @@
             }
         }
     },
-    "forwardPorts": [6080]
+    "forwardPorts": [6080],
+    "postCreateCommand": "pnpm install"
 }
