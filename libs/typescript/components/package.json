@@ -1,10 +1,9 @@
 {
-    "name": "@definelabs/libs-components",
-    "main": "src/index.ts",
-    "dependencies": {
-        "add": "^2.0.6",
-        "react": "18.2.0",
-        "react-ts-tradingview-widgets": "^1.0.14",
-        "@definelabs/libs-orderbook": "workspace:*"
-    }
+  "name": "@definelabs/lib-components",
+  "main": "src",
+  "dependencies": {
+    "@definelabs/lib-orderbook": "workspace:*",
+    "@definelabs/lib-deps-next": "workspace:*",
+    "typescript": "^5.0.4"
+  }
 }

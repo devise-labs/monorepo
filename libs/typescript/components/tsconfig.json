@@ -1,0 +1,3 @@
+{
+  "extends": "@definelabs/lib-deps-next/tsconfig.json"
+}
