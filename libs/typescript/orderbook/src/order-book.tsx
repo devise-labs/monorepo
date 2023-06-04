@@ -1,8 +1,8 @@
-import * as React from 'react';
+import OrderB from './hi/src/components/OrderBook';
+import { store } from './hi/src/store';
+import { Provider } from 'react-redux';
 
-// https://github.com/decartesol/orderbook
-export const OrderBook: React.FC = () => {
-    return (
-        <div>Order Book</div>
-    )
-}
+export const OrderBook = () =>
+  <Provider store={store}>
+    <OrderB windowWidth={1000} productId='AAPL' isFeedKilled={false} />
+  </Provider>

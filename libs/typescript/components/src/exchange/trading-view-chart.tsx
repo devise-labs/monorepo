@@ -57,5 +57,5 @@ export function TradingViewWidget() {
     []
   );
 
-  return <div id={CONTAINER_ID} />
+  return <div id={CONTAINER_ID} className='h-full' />
 }

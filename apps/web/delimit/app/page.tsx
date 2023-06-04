@@ -16,23 +16,23 @@ export default function Home() {
           <div className="flex flex-row w-full h-full">
             <div className="flex-1">
               <div className="h-full flex flex-col">
-                <div className='flex-1 overflow-hidden bg-red-400'>
+                <div className='flex-1 overflow-hidden bg-black'>
                   <RGL
                     className='layout'
                     layouts={{lg: [
-                      {i: 'chart', x: 0, y: 0, w: 10, h: 4},
-                      {i: 'book', x: 4, y: 0, w: 3, h: 2},
-                      {i: 'positions', x: 0, y: 40, w: 12, h: 2}
+                      {i: 'chart', x: 0, y: 0, w: 9, h: 6},
+                      {i: 'book', x: 10, y: 0, w: 3, h: 6},
+                      {i: 'positions', x: 0, y: 6, w: 12, h: 2.1}
                     ]}}
                   >
-                    <div key={'chart'} className='bg-black'><TradingViewWidget /></div>
+                    <div key={'chart'} className='bg-white'><TradingViewWidget /></div>
                     <div key={'book'} className='bg-green-400'><OrderBook /></div>
                     <div key={'positions'} className='bg-violet-400'>Positions</div>
                   </RGL>  
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-64 h-full bg-slate-200">
+            <div className="w-full lg:w-96 h-full bg-slate-200">
               <div className="h-full">
                 <h2 className="text-xl font-bold">Place Orders</h2>
               </div>
