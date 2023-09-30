@@ -10,15 +10,19 @@ Create a codespace for the project then run any of the following commands
 
 Commands
 - `x add [lib|app|svc|cli|sc] <name of package> <name of dep>`
-- `x del [lib|app|svc|cli|sc] <name of package> <name of dep>`
-- `x new [lib|app|svc|cli|sc] <name of package>`
-- `x dev <name of package>`
-- `x tst [lib|app|svc|cli|sc] <name of package>` (run tests for a package)
-- `x dep [app|svc|sc] <name of package>` (deploy an application, service or smart contract)
-- `x pub <name of library>` (publish a library to npm or cargo)
-- `x psh` (commits and pushes to git)
-- `x tkn [sol|sui|xrd] <name of token>`
 - `x cln [lib|app|svc|cli|sc] <name of package>` (clean dependencies from all repos)
+- `x del [lib|app|svc|cli|sc] <name of package> <name of dep>`
+- `x dep [app|svc|sc] <name of package>` (deploy an application, service or smart contract)
+- `x dev [app|svc|sc] <name of package>`
+- `x new <package subtype> <package type> <name of package>`
+  - `x new [lib|svc] [rs|ts]`
+  - `x new [app] [xnft|web]`
+  - `x new [sc] [sol]`
+  - `x new [cli]`
+- `x psh` (commits and pushes to git)
+- `x pub <name of library>` (publish a library to npm or cargo)
+- `x tkn [sol|sui|xrd] <name of token>`
+- `x tst [lib|app|svc|cli|sc] <name of package>` (run tests for a package)
 
 # Current Progress
 

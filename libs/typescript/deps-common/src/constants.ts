@@ -17,3 +17,19 @@ export const PACKAGE_ABBRV: {[packageType in PackageType]: string} = {
 export const PACKAGE_ABBRV_LOOKUP: Record<string, PackageType> 
   = Object.fromEntries(Object.entries(PACKAGE_ABBRV).map(([k, v]) => [v, k])) as Record<string, PackageType>;
 export const VALID_INPUT_PACKAGE_TYPES = Object.values(PackageType).map(pt => PACKAGE_ABBRV[pt]);
+export const CANNON_PACKAGE_NAME = "canonical";
+export const PACKAGE_HIERARCHY = {
+  [PackageType.App]: {
+    web: true,
+    xnft: true
+  },
+  [PackageType.CommandLineInterface]: true,
+  [PackageType.Library]: {
+    rust: "rs",
+    typescript: "ts"
+  },
+  [PackageType.Service]: true,
+  [PackageType.SmartContract]: {
+    sol: true
+  }
+} as const;
