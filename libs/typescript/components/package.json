@@ -1,9 +1,9 @@
 {
-  "name": "@definelabs/lib-components",
+  "name": "@devise-labs/lib-components",
   "main": "src",
   "dependencies": {
-    "@definelabs/lib-orderbook": "workspace:*",
-    "@definelabs/lib-deps-next": "workspace:*",
+    "@devise-labs/lib-orderbook": "workspace:*",
+    "@devise-labs/lib-deps-next": "workspace:*",
     "typescript": "^5.0.4"
   }
 }

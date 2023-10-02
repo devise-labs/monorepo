@@ -1,0 +1,6 @@
+{
+  "extends": "@devise-labs/lib-common-base/tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"]
+  }
+}

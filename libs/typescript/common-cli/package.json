@@ -1,0 +1,9 @@
+{
+  "name": "@devise-labs/lib-common-cli",
+  "dependencies": {
+    "@devise-labs/lib-common-base": "workspace:*",
+    "@types/node": "18.16.3",
+    "commander": "^10.0.1"
+  },
+  "main": "src"
+}

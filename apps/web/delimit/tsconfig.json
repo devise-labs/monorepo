@@ -1,5 +1,5 @@
 {
-  "extends": "@definelabs/lib-deps-next/tsconfig.json",
+  "extends": "@devise-labs/lib-deps-next/tsconfig.json",
   "compilerOptions": {
     "lib": ["dom"],
     "plugins": [

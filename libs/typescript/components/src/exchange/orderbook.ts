@@ -1,1 +1,1 @@
-export { OrderBook } from '@definelabs/lib-orderbook';
+export { OrderBook } from '@devise-labs/lib-orderbook';

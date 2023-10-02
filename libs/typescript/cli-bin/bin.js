@@ -1,7 +1,7 @@
 const {register} = require('ts-node');
 register({swc: true, compilerOptions: {module: 'CommonJS'}});
 const packageJson = require('./package.json');
-const {fs, path, UserError, cmd, DIR} = require('@definelabs/lib-deps-cli');
+const {fs, path, UserError, cmd, DIR} = require('@devise-labs/lib-deps-cli');
 
 const program = new cmd.Command();
 program

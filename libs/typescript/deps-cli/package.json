@@ -1,9 +1,0 @@
-{
-    "name": "@definelabs/lib-deps-cli",
-    "dependencies": {
-        "@definelabs/lib-deps-common": "workspace:*",
-        "@types/node": "18.16.3",
-        "commander": "^10.0.1"
-    },
-    "main": "src"
-}

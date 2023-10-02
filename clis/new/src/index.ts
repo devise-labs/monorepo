@@ -1,4 +1,4 @@
-import { cmd, common, UserError } from '@definelabs/lib-deps-cli';
+import { cmd, common, UserError } from '../../../libs/typescript/common-cli/src';
 
 const validTypesDisplay = common.consts.VALID_INPUT_PACKAGE_TYPES.map(pt => `'${pt}'`).join(", ");
 

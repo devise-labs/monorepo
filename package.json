@@ -1,5 +1,5 @@
 {
     "devDependencies": {
-        "@definelabs/lib-cli-bin": "workspace:*"
+        "@devise-labs/lib-cli-bin": "workspace:*"
     }
 }

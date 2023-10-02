@@ -1,5 +1,5 @@
 {
-  "extends": "@definelabs/lib-deps-common/tsconfig.json",
+  "extends": "@devise-labs/lib-deps-common/tsconfig.json",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

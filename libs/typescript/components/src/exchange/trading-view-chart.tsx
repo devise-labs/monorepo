@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef } from '@definelabs/lib-deps-next/react';
+import { useEffect, useRef } from '../../../common-next/react';
 
 const CONTAINER_ID = "tradingview_d3c5c";
 let tvScriptLoadingPromise: Promise<void> | undefined;

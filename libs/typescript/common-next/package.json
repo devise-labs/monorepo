@@ -1,7 +1,7 @@
 {
-  "name": "@definelabs/lib-deps-next",
+  "name": "@devise-labs/lib-deps-next",
   "dependencies": {
-    "@definelabs/lib-deps-common": "workspace:*",
+    "@devise-labs/lib-deps-common": "workspace:*",
     "@types/react": "18.2.4",
     "@types/react-dom": "18.2.3",
     "react": "18.2.0",

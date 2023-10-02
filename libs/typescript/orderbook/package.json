@@ -1,8 +1,8 @@
 {
-  "name": "@definelabs/lib-orderbook",
+  "name": "@devise-labs/lib-orderbook",
   "main": "src",
   "dependencies": {
-    "@definelabs/lib-deps-next": "workspace:*",
+    "@devise-labs/lib-deps-next": "workspace:*",
     "@reduxjs/toolkit": "^1.9.5",
     "@types/react": "18.2.4",
     "@types/react-dom": "18.2.3",

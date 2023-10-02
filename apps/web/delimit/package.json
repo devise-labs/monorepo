@@ -1,5 +1,5 @@
 {
-  "name": "@definelabs/app-web-delimit",
+  "name": "@devise-labs/app-web-delimit",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@definelabs/lib-components": "workspace:*",
-    "@definelabs/lib-deps-next": "workspace:*",
+    "@devise-labs/lib-components": "workspace:*",
+    "@devise-labs/lib-deps-next": "workspace:*",
     "@types/node": "18.16.3",
     "@types/react": "18.2.4",
     "@types/react-dom": "18.2.3",

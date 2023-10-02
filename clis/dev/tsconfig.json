@@ -1,5 +1,5 @@
 {
-    "extends": "@definelabs/lib-deps-cli/tsconfig.json",
+    "extends": "@devise-labs/lib-deps-cli/tsconfig.json",
     "compilerOptions": {
         "types": ["node"]
     }

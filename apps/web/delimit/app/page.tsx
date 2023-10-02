@@ -1,5 +1,5 @@
 'use client'
-import { TradingViewWidget, OrderBook } from '@definelabs/lib-components';
+import { TradingViewWidget, OrderBook } from '@devise-labs/lib-components';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 
 const RGL = WidthProvider(Responsive);

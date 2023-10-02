@@ -1,8 +1,8 @@
 {
-  "name": "@definelabs/cli-dev",
+  "name": "@devise-labs/cli-dev",
   "description": "run an app in dev mode",
   "dependencies": {
-    "@definelabs/lib-deps-cli": "workspace:*",
+    "@devise-labs/lib-deps-cli": "workspace:*",
     "@types/node": "18.16.3"
   },
   "main": "src"
