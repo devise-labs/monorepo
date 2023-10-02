@@ -1,4 +1,4 @@
-import * as cli from '@devise-labs/lib-deps-cli';
+import * as cli from '@devise-labs/lib-common-cli';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as proc from 'child_process';

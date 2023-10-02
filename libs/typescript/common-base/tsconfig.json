@@ -13,6 +13,9 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "importHelpers": true,
-    "lib": ["ESNext"]
+    "lib": ["ESNext"],
+    "paths": {
+      "tslib": ["node_modules/@devise-labs/lib-common-base/node_modules/tslib/tslib.d.ts"]
+    }
   }
 }

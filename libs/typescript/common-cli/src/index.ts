@@ -1,10 +1,14 @@
-import * as path from 'path';
-import { consts } from '../../common-base/src';
+import { consts } from '@devise-labs/lib-common-base';
+import * as pth from 'path';
+import * as rct from 'react';
 
 export * as cmd from 'commander';
 export * as fs from 'fs';
-export * as path from 'path';
-export * as common from '../../common-base/src';
+export const path = pth;
+export * as common from '@devise-labs/lib-common-base';
+export {default as React} from 'react';
+export const react = rct;
+export const ink = import('ink');
 
 export const MONOREPO_ROOT_DIR = path.resolve(__dirname, '../../../../');
 function getDir(pt: consts.PackageType) { return path.resolve(MONOREPO_ROOT_DIR, consts.PACKAGE_ABBRV[pt] + 's'); }

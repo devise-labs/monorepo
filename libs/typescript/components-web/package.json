@@ -3,7 +3,7 @@
   "main": "src",
   "dependencies": {
     "@devise-labs/lib-orderbook": "workspace:*",
-    "@devise-labs/lib-deps-next": "workspace:*",
+    "@devise-labs/lib-common-next": "workspace:*",
     "typescript": "^5.0.4"
   }
 }

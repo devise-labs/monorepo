@@ -2,8 +2,13 @@
   "name": "@devise-labs/lib-common-cli",
   "dependencies": {
     "@devise-labs/lib-common-base": "workspace:*",
+    "@types/deasync": "^0.1.3",
     "@types/node": "18.16.3",
-    "commander": "^10.0.1"
+    "@types/react": "18.2.4",
+    "commander": "^10.0.1",
+    "deasync": "^0.1.28",
+    "ink": "^4.4.1",
+    "react": "18.2.0"
   },
   "main": "src"
 }

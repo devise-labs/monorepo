@@ -2,7 +2,7 @@
   "name": "@devise-labs/cli-new",
   "description": "creating packages",
   "dependencies": {
-    "@devise-labs/lib-deps-cli": "workspace:*"
+    "@devise-labs/lib-common-cli": "workspace:*"
   },
   "main": "src"
 }
