@@ -1,2 +1,2 @@
-export * as consts from './constants';
-export * from './logger';
+export * as consts from './constants.ts';
+export * from './logger.ts';

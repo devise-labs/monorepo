@@ -1,7 +1,8 @@
 {
   "name": "@devise-labs/cli-canonical",
+  "type": "module",
   "dependencies": {
     "@devise-labs/lib-common-cli": "workspace:*"
   },
-  "main": "src"
+  "main": "src/index.tsx"
 }

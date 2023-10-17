@@ -1,4 +1,4 @@
-import packageJson from './package.json';
+import packageJson from './package.json' assert { type: 'json' };
 import {fs, path, UserError, cmd, DIR, common} from '@devise-labs/lib-common-cli';
 
 const program = new cmd.Command();
@@ -9,7 +9,7 @@ program
     program.help();
   });
 
-function handleError(error) {
+function handleError(error: Error) {
   const errorType = error.constructor.name;
   const stack = error.stack;
   error.stack = 'see below...';
@@ -37,7 +37,7 @@ async function main() {
     if (name !== cli) {
       throw new UserError(`CLI dir of ${cli} not matching name of ${name}`);
     }
-    const {registerCommand, description} = process.env.BUN ? await import(cliPackageJson.name) : require(cliPackageJson.name);
+    const {registerCommand, description} = await import(cliPackageJson.name);
     const command = program.command(name).description(description);
     if (typeof registerCommand !== 'function') {
       throw new UserError(`CLI '${cli}' not returning a 'registerCommand' function`);
@@ -46,7 +46,8 @@ async function main() {
       throw new UserError(`CLI '${cli}' not returning a 'description' string`)
     }
     registerCommand(command);
-    command.showHelpAfterError();
+    command.showHelpAfterError()
+    break;
   }
   program.parse();
 }
@@ -54,10 +55,10 @@ async function main() {
 try {
   main().catch(handleError);
 } catch(e) {
-  handleError(e);
+  handleError(e as Error);
 }
 
-process.on('unhandledRejection', (e) => {
+process.on('unhandledRejection', (e: Error) => {
   console.log('unhandled rejection');
   handleError(e);
 });

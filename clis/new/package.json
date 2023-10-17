@@ -1,6 +1,7 @@
 {
   "name": "@devise-labs/cli-new",
   "description": "creating packages",
+  "type": "module",
   "dependencies": {
     "@devise-labs/lib-common-cli": "workspace:*"
   },

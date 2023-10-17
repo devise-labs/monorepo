@@ -1,5 +1,6 @@
 {
   "name": "@devise-labs/lib-common-cli",
+  "type": "module",
   "dependencies": {
     "@devise-labs/lib-common-base": "workspace:*",
     "@types/deasync": "^0.1.3",
@@ -10,5 +11,5 @@
     "ink": "^4.4.1",
     "react": "18.2.0"
   },
-  "main": "src"
+  "main": "src/index.ts"
 }

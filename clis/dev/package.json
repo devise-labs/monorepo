@@ -1,6 +1,7 @@
 {
   "name": "@devise-labs/cli-dev",
   "description": "run an app in dev mode",
+  "type": "module",
   "dependencies": {
     "@devise-labs/lib-common-cli": "workspace:*",
     "@types/node": "18.16.3"

@@ -5,7 +5,6 @@
     "jsx": "react",
     "paths": {
       "tslib": ["./node_modules/@devise-labs/lib-common-base/node_modules/tslib/tslib.d.ts"],
-      "ink": ["./node_modules/ink/build/index.d.ts"]
     }
   }
 }

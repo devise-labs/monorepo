@@ -1,11 +1,23 @@
+import {execSync} from 'child_process';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const dir = path.resolve(fileURLToPath(import.meta.url), '../');
+const entryPath = path.resolve(dir, 'entry.ts');
+const args = process.argv.slice(2).join(' ');
+
 const useBun = false;
 if (useBun) {
-  const path = require('path');
-  const entryPath = path.resolve(__dirname, './entry.ts');
-  const args = process.argv.slice(2).join(' ');
-  require('child_process').execSync(`BUN=${useBun} bun ${entryPath} ${args}`, {stdio: 'inherit'});
+  execSync(`BUN=${useBun} bun ${entryPath} ${args}`, {stdio: 'inherit'});
 } else {
-  const {register} = require('ts-node');
-  register({swc: true, compilerOptions: {module: 'node16', esModuleInterop: true, moduleResolution: "node16", jsx: 'react'}});
-  require('./entry');
+  const tsNodePath = path.resolve(dir, 'node_modules/.bin/ts-node-esm');
+  const compilerOptions = {
+    resolveJsonModule: true,
+    module: "ESNext",
+    moduleResolution: "NodeNext", 
+    esModuleInterop: true,
+    allowImportingTsExtensions: true,
+    jsx: "react"
+  }
+  execSync(`NODE_NO_WARNINGS=1 pnpm exec ${tsNodePath} --compilerOptions ${JSON.stringify(JSON.stringify(compilerOptions))} ${entryPath} ${args}`, {stdio: 'inherit'});
 }

@@ -1,10 +1,11 @@
 {
   "name": "@devise-labs/lib-common-base",
+  "type": "module",
   "dependencies": {
     "pino": "^8.15.3",
     "tslib": "^2.6.2",
     "type-fest": "^3.11.0",
     "typescript": "^5.0.4"
   },
-  "main": "src"
+  "main": "src/index.ts"
 }
