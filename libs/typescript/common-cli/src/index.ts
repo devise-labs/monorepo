@@ -2,6 +2,7 @@ import { consts } from '@devise-labs/lib-common-base';
 import * as pth from 'path';
 import { fileURLToPath } from 'url';
 import React from 'react';
+import { render as renderInk } from 'ink';
 
 export * as cmd from 'commander';
 export * as fs from 'fs';
@@ -9,6 +10,7 @@ export const path = pth;
 export * as common from '@devise-labs/lib-common-base';
 export * as ink from 'ink';
 export { React };
+export * from './components/index.ts';
 
 const dir = path.resolve(fileURLToPath(import.meta.url), '../');
 export const MONOREPO_ROOT_DIR = path.resolve(dir, '../../../../');
