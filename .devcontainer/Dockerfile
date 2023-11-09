@@ -47,7 +47,7 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH="${USER_HOME}/.cargo/bin:${PATH}"
 
 # solana
-RUN sh -c "$(curl -sSfL https://release.solana.com/v1.17.4/install)"
+RUN sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 ENV PATH="/root/.local/share/solana/install/active_release/bin:${PATH}"
 
 # Tauri
