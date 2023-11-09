@@ -46,6 +46,10 @@ RUN echo "alias x=\"pnpm cli\"" >> ~/.bash_aliases
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH="${USER_HOME}/.cargo/bin:${PATH}"
 
+# solana
+RUN sh -c "$(curl -sSfL https://release.solana.com/v1.17.4/install)"
+ENV PATH="/root/.local/share/solana/install/active_release/bin:${PATH}"
+
 # Tauri
 # https://next--tauri.netlify.app/next/guides/getting-started/prerequisites/linux
 RUN DEBIAN_FRONTEND=noninteractive apt install -y \

@@ -11,6 +11,7 @@ export * as common from '@devise-labs/lib-common-base';
 export * as ink from 'ink';
 export { React };
 export * from './components/index.ts';
+export * from './resolve-inputs.tsx';
 
 const dir = path.resolve(fileURLToPath(import.meta.url), '../');
 export const MONOREPO_ROOT_DIR = path.resolve(dir, '../../../../');

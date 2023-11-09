@@ -28,7 +28,7 @@ export function Menu({ elements, curIndex, onChange, onSubmit }: MenuProps) {
     }
   });
   if (choice) {
-    return <Text color={'magenta'}>{choice}</Text>;
+    return <Text color={'magenta'}>choice is {choice}</Text>;
   }
   function getColor(i: number): TextProps['color'] {
     return i === finalIndex ? 'green' : 'cyan';
